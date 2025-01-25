@@ -36,7 +36,7 @@ namespace CaseSimulator.Gameplay.SpinSystem
 
         public void StartSpin() 
         {
-            PlaySound(sounds[1], p1 : 0.8f, p2 : 1.2f);
+            PlaySound(sounds[1], volume: 0.2f, p1 : 0.8f, p2 : 1.2f);
             Bank.RemoveMoney(_spawner.Case.Cost);
 
             Spin();
@@ -64,7 +64,7 @@ namespace CaseSimulator.Gameplay.SpinSystem
                 {
                     _isSpin = false;
                     _spinSpeed = 0;
-                    PlaySound(sounds[0], 0.90f, false, 1f, 1f);
+                    PlaySound(sounds[0], 0.3f);
                     _winArrow.OnWin();
                 }
             }

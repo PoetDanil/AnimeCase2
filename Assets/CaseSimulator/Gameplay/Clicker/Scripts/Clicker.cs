@@ -53,7 +53,7 @@ namespace CaseSimulator.Gameplay.ClickerSystem
             mousePostion.z = 0;
             StartCoroutine(_particlesClick.ParticleSpawn(mousePostion));
             
-            PlaySound(0, random: true);
+           PlaySound(0, random: true);
         }
         
         public void AddMultipler(int toAdd)

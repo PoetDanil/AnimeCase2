@@ -39,7 +39,7 @@ namespace CaseSimulator.Gameplay.SpinSystem
         public void Sell()
         {
             Bank.AddMoney(_itemInfo.Cost);
-            PlaySound(sounds[0], destroyed : true,volume: 1.3f);
+            PlaySound(sounds[0], destroyed: true, volume : 6f);
             OnRewardClaimed?.Invoke();
         }
 

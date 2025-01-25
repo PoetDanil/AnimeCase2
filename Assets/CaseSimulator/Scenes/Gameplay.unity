@@ -1943,7 +1943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 8300000, guid: c620032980437d445adf1bdd6bec5e89, type: 3}
+  - {fileID: 8300000, guid: e2decb1e0514ebf41995974049f9f137, type: 3}
   _inventoryInteractor: {fileID: 1873586435}
   _panel: {fileID: 1146356858}
   _item: {fileID: 1750704407}
@@ -1966,7 +1966,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 137
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -8068,7 +8068,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds: []
-  randSound: []
+  randSound:
+  - soundArray:
+    - {fileID: 8300000, guid: 7d2619f736e3a2d4ea3cd47d74009ab1, type: 3}
+    - {fileID: 8300000, guid: 097fab9a8cf9df741b951f281b7c1843, type: 3}
+    - {fileID: 8300000, guid: 84530c46a51600849830ee0dc97b2402, type: 3}
+    - {fileID: 8300000, guid: 770cb7ef1f7059645a1546be984296c3, type: 3}
+    - {fileID: 8300000, guid: c302d922355c5c24d8e8192b1d8cfd8c, type: 3}
+    - {fileID: 8300000, guid: 191e0b9b005c87842a98aa5b212fcd90, type: 3}
   _animatorBoolName: OnClick
   _multiplier: 2
   _particlesClick: {fileID: 53409328}
@@ -9298,11 +9305,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 8300000, guid: 3ff2dcc92c7a9e4428e48780ec2adb80, type: 3}
-  - {fileID: 8300000, guid: ec9edb27878487940953934e3d25a149, type: 3}
-  - {fileID: 8300000, guid: 735f84357e84a524784ebe9322515646, type: 3}
-  - {fileID: 8300000, guid: b3e1ffac20caad94cae9cc4313351795, type: 3}
-  - {fileID: 8300000, guid: 51eb7a5fce49a2a44b889b3d49a7e1c6, type: 3}
+  - {fileID: 8300000, guid: 79a0b4065c753ee41ba0430d6fafe19a, type: 3}
+  - {fileID: 8300000, guid: 79a0b4065c753ee41ba0430d6fafe19a, type: 3}
+  - {fileID: 8300000, guid: 79a0b4065c753ee41ba0430d6fafe19a, type: 3}
+  - {fileID: 8300000, guid: 79a0b4065c753ee41ba0430d6fafe19a, type: 3}
+  - {fileID: 8300000, guid: 79a0b4065c753ee41ba0430d6fafe19a, type: 3}
   _ourGamesUI: {fileID: 143711877}
   _gameUI: {fileID: 726247828}
   _mainCanvas: {fileID: 1421905777}
@@ -10755,7 +10762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 8300000, guid: 695083485e8cf5248ad36637b899c54f, type: 3}
+  - {fileID: 8300000, guid: 631525e8905e46c44ad121f50bc959c5, type: 3}
   - {fileID: 8300000, guid: f8c1365c9b4672542b1d3967e2a4da56, type: 3}
   _spinButton: {fileID: 82499155}
   _backButton: {fileID: 232663121}
