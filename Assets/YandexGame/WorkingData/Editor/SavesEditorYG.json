@@ -1,0 +1,21 @@
+{
+    "idSave": 83,
+    "isFirstSession": false,
+    "language": "ru",
+    "promptDone": false,
+    "money": 1,
+    "newPlayerName": "Hello!",
+    "openLevels": [
+        false,
+        true,
+        false
+    ],
+    "Multipler": 12,
+    "CurrentSkin": {
+        "instanceID": 24694
+    },
+    "CurrentClickerSkin": {
+        "instanceID": 24396
+    },
+    "nowAutoClicks": 7
+}
