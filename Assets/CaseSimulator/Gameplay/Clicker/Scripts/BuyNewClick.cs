@@ -31,12 +31,12 @@ public class BuyNewClick : MonoBehaviour{
 
     void SetText() {
         if (clicker.Clicks.Length-1 == Clicker.NowAutoClick) {
-            but.GetComponentInChildren<Text>().text = "Max Level";
-            text.text = "Level is: "+Clicker.NowAutoClick.ToString();
+            but.GetComponentInChildren<Text>().text = "Максимальный уровень";
+            text.text = "Текущий уровень: "+Clicker.NowAutoClick.ToString();
         } else
         {
-            but.GetComponentInChildren<Text>().text = "Next's AutoClick: "+clicker.GetPrice();
-            text.text = "Level is: "+Clicker.NowAutoClick.ToString();
+            but.GetComponentInChildren<Text>().text = "Следующий уровень: "+clicker.GetPrice();
+            text.text = "Текущий уровень: "+Clicker.NowAutoClick.ToString();
         }
     }
 }
