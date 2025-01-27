@@ -24,7 +24,6 @@ public class AdManager : MonoBehaviour{
     {
         if(id == 0)
         {
-            AudioListener.volume = 1f;
             OpenPan.OnOpenPan?.Invoke();
             CaseSimulator.Gameplay.CaseSystem.Case.OnOpenCase?.Invoke();
         }
@@ -38,7 +37,6 @@ public class AdManager : MonoBehaviour{
     {
         _countOfCoins = countOfCoins;
         
-        AudioListener.volume = 0f;
         YandexGame.RewVideoShow(id);
     }
 }

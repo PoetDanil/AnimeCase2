@@ -1,2 +1,2 @@
-Build path: C:/Users/Hozyin/Desktop/Анимешка
-Build number: 10
+Build path: C:/Users/Hozyin/Desktop/nim
+Build number: 12
