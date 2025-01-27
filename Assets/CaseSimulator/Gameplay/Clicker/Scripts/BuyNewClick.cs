@@ -6,37 +6,34 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class BuyNewClick : MonoBehaviour{
-    [SerializeField] private Button but;
-    [SerializeField] private Text text;
+    [SerializeField] private Text text, text2;
     [SerializeField] private Clicker clicker;
 
-    private void Start() {
-        SetText();
-    }
-
+    private void Start() => SetText();
+    
     public void Buy() { 
-        if(Clicker.NowAutoClick > clicker.Clicks.Length-1) 
+        if(clicker.NowAutoClick > clicker.Clicks.Length-1) 
             return;
         
-        if(Bank.GetMoney() <= clicker.Clicks[Clicker.NowAutoClick].UpgradeCost)
+        if(Bank.GetMoney() <= clicker.Clicks[clicker.NowAutoClick+1].UpgradeCost)
             return;
-            
-        Clicker.NowAutoClick++;
-        Bank.RemoveMoney(clicker.Clicks[Clicker.NowAutoClick].UpgradeCost);
-            
+        
+        Bank.RemoveMoney(clicker.Clicks[clicker.NowAutoClick+1].UpgradeCost);
+        clicker.NowAutoClick++;
+        
         SetText();
 
         clicker.Save();
     }
 
-    void SetText() {
-        if (clicker.Clicks.Length-1 == Clicker.NowAutoClick) {
-            but.GetComponentInChildren<Text>().text = "Максимальный уровень";
-            text.text = "Текущий уровень: "+Clicker.NowAutoClick.ToString();
+    public void SetText() {
+        if (clicker.Clicks.Length-1 == clicker.NowAutoClick) {
+            text2.text = "Максимальный уровень";
+            text.text = "Уровень: "+clicker.NowAutoClick.ToString();
         } else
         {
-            but.GetComponentInChildren<Text>().text = "Следующий уровень: "+clicker.GetPrice();
-            text.text = "Текущий уровень: "+Clicker.NowAutoClick.ToString();
+            text2.GetComponentInChildren<Text>().text = "Цена следующего уровеня: "+clicker.GetNextPrice();
+            text.text = "Уровень: "+clicker.NowAutoClick.ToString();
         }
     }
 }

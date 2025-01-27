@@ -30,7 +30,7 @@ namespace CaseSimulator.Gameplay.MoneySystem
 
         public static void RemoveMoney(int money)
         {
-            Money -= Mathf.Abs(money);
+            Money -= money;
             Counter.UpdateCount(Money);
             SaveMoney();
         }

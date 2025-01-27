@@ -5,9 +5,9 @@ using CaseSimulator.Gameplay.MoneySystem;
 using UnityEngine;
 using YG;
 
-public class AdManager : MonoBehaviour
-{
-
+public class AdManager : MonoBehaviour{
+    private static int _countOfCoins;
+    
     private void OnEnable()
     {
 		  YandexGame.RewardVideoEvent += Rewarded;
@@ -30,12 +30,14 @@ public class AdManager : MonoBehaviour
         }
 
         if (id == 1) {
-            Bank.AddMoney(100); //For example
+            Bank.AddMoney(_countOfCoins); //For example
         }
     }
 
-    public static void ShowRewardAd(int id)
+    public static void ShowRewardAd(int id, int countOfCoins = 0)
     {
+        _countOfCoins = countOfCoins;
+        
         AudioListener.volume = 0f;
         YandexGame.RewVideoShow(id);
     }

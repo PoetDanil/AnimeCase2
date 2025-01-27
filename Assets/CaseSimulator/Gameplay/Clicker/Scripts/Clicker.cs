@@ -23,7 +23,7 @@ namespace CaseSimulator.Gameplay.ClickerSystem
         
         public Click[] Clicks;
         
-        public static int NowAutoClick = 0;
+        public int NowAutoClick = 0;
 
         private void Awake()
         {
@@ -67,8 +67,8 @@ namespace CaseSimulator.Gameplay.ClickerSystem
             _animator.SetBool(_animatorBoolName, false);
         }
 
-        public int GetPrice() {
-            return Clicks[NowAutoClick].UpgradeCost;
+        public int GetNextPrice() {
+            return Clicks[NowAutoClick+1].UpgradeCost;
         }
 
         IEnumerator AutoClick() {
